@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Similarity join result</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+
+    <div class="wrap-contact200">
+        <span class="contact100-form-title">
+            Similarity join
+        </span>
+
+        <div class="container-contact100-form-btn">
+            <button class="contact100-form-btn" onclick="window.location.href='/'">
+                <span>
+                    <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true">
+                    </i>
+                    Back
+                </span>
+            </button>
+        </div>
+
+
+        <div class="dataset">
+            <span>
+                <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true">
+                    First dataset
+                </i>
+            </span>
+
+            {% for i in first_set %}
+            <div class="result">
+                <div class="result-img">
+                    <p>{{i[0]}}</p>
+                    <img src="{{i[0]}}" alt="picture"/>
+                    <p>Similar pictures</p>
+                </div>
+                
+                <div class="similar">
+                    {% if i[1]|length < 1 %}
+                        <p>None</p>
+                    {% else %}
+                        {% for j in i[1] %}
+                        <img src="{{j[0]}}" alt="picture"/>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+            
+            
+
+
+
+            <div class="dataset">
+                <span>
+                    <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true">
+                        Second dataset
+                    </i>
+                </span>
+
+                {% for i in second_set %}
+                <div class="result">
+                    <div class="result-img">
+                        <p>{{i[0]}}</p>
+                        <img src="{{i[0]}}" alt="picture"/>
+                        <p>Similar pictures</p>
+                    </div>
+                    
+                    <div class="similar">
+                        {% if i[1]|length < 1 %}
+                            <p>None</p>
+                        {% else %}
+                            {% for j in i[1] %}
+                            <img src="{{j[0]}}" alt="picture"/>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        
+    </div>
+</div>
+{% endblock %}

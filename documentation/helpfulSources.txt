@@ -1,0 +1,11 @@
+https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
+
+https://stackoverflow.com/questions/52736154/python-how-to-check-similarity-of-two-images-that-have-different-pixelization
+
+https://stackoverflow.com/questions/11541154/checking-images-for-similarity-with-opencv
+
+https://www.pyimagesearch.com/2014/07/14/3-ways-compare-histograms-using-opencv-python/
+
+https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774
+
+https://colorlib.com/wp/template/contact-form-v10/

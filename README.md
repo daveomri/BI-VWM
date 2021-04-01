@@ -1,1 +1,3 @@
-# BI-VWM
+# Similarity join
+
+BI-VWM project

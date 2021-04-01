@@ -1,0 +1,13 @@
+@techreport{2000970,
+institution={University of Bristol},
+author={Christopher Evans},
+number={CSTR-09-001},
+title={Notes on the OpenSURF Library},
+month={January},
+year={2009},
+abstract={In this document, the SURF detector-descriptor scheme used in the OpenSURF library is discussed in detail. First the algorithm is analysed from a theoretical standpoint to provide a detailed overview of how and why it works. Next the design and development choices for the implementation of the library are discussed and justi ed. During the implementation of the library, it was found that some of the  ner details of the algorithm had been omitted or overlooked, so Section 1.5 serves to make clear the concepts which are not explicitly de ned in the SURF paper [1].},
+abstract-url={http://www.cs.bris.ac.uk/Publications/pub_master.jsp?id=2000970},
+url={http://www.cs.bris.ac.uk/Publications/Papers/2000970.pdf},
+keyword={Computer Vision},
+pubtype={117}
+}

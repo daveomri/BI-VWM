@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Similarity join</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+
+    <div class="wrap-contact100">
+
+        <form class="contact100-form validate-form" method="POST" enctype="multipart/form-data">
+            <span class="contact100-form-title">
+                Similarity join
+            </span>
+
+            <div class="align-center">
+                <p>First dataset</p>
+                <input type="file" name="firstDataset" placeholder="First dataset" multiple="multiple">
+            </div>
+
+            <div class="align-center">
+                <p>Second dataset</p>
+                <input type="file" name="secondDataset" placeholder="Second dataset" multiple="multiple">
+            </div>
+
+            <div class="align-center">
+                <p>Parameters</p>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="similarity_function" id="knn" value="knn" checked>
+                <label for="knn">KNN</label>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="similarity_function" id="range" value="range">
+                <label for="range">Range</label>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Please enter k or range">
+                <input class="input100" type="text" name="func_data" placeholder="Enter number of neighbors for KNN or border for Range">
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Please enter number of keypoints to extract">
+                <input class="input100" type="text" name="keypoint_num" placeholder="Enter number of keypoints to extract">
+            </div>
+
+            <div class="align-center">
+                <p>Feature extractor</p>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="algorithm" id="kaze" value="kaze" checked>
+                <label for="kaze">Kaze</label>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="algorithm" id="akaze" value="akaze">
+                <label for="akaze">AKAZE</label>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="algorithm" id="orb" value="orb">
+                <label for="orb">ORB</label>
+            </div>
+
+            <div class=" align-center">
+                <input type="radio" name="algorithm" id="brisk" value="brisk">
+                <label for="brisk">BRISK</label>
+            </div>
+
+
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn" type="submit">
+                    <span>
+                        <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                        Run
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
